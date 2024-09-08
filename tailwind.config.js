@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bg-dark': 'rgba(17, 25, 40, 0.75)',
-        'thbg': '#2d3748', // Gray 800
+        // 'bg-dark': 'rgba(17, 25, 40, 0.75)',
+        'thbg': '#2d3748', 
       },
      },
   },
