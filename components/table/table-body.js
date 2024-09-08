@@ -15,8 +15,16 @@ const TableBody = ({ wishlist }) => {
         wishlist.map((item, index) => (
           <tr key={index} className='hover:bg-gray-700'>
             <td className='py-3 px-4 border-b border-gray-700 text-center'>{item.itemName}</td>
-            <td className='py-3 px-4 border-b border-gray-700 text-center'>{item.purchased}</td>
-            <td className='py-3 px-4 border-b border-gray-700 text-center'>{item.price}</td>
+            <td className='py-3 px-4 border-b border-gray-700 text-center'>
+              <span
+                className={`px-2 py-1 text-white rounded-lg ${
+                  item.purchased === 'yes' ? 'bg-green-500' : 'bg-red-500'
+                }`}
+              >
+                {item.purchased}
+              </span>
+            </td>
+            <td className='py-3 px-4 border-b border-gray-700 text-center'>${item.price}</td>
             <td className='py-3 px-4 border-b flex items-center justify-center border-gray-700 text-center'>
               <Link href={`/edit/${item.id}`} className='text-blue-500 hover:text-blue-700'>
                 <FiEdit2 className='w-4 h-4' />

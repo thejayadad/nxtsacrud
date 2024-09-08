@@ -3,7 +3,6 @@ import React from 'react'
 import {FiSearch} from "react-icons/fi"
 import { useSearchParams, usePathname, useRouter} from "next/navigation"
 import { useDebouncedCallback } from 'use-debounce'
-import Box from './box'
 import Background from './background'
 
 const SearchBar = () => {

@@ -1,5 +1,6 @@
 import React from 'react'
 import Box from './box'
+import Logo from './logo'
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
     <Box>
     <div className='flex justify-between w-full items-center'>
     <h1 className='text-lg md:text-xl lg:text-2xl font-bold'>
-            Logo    
+            <Logo />
         </h1> 
        
     </div>

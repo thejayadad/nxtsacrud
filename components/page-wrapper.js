@@ -1,12 +1,14 @@
 import React from 'react'
-import Box from './box'
 
 const PageWrapper = ({children}) => {
   return (
     <div className='w-full p-4 min-h-screen'>
-        <Box>
+        <div
+            className='max-w-screen-lg mx-auto xl:px-20 md:px-10 sm:px-2 px-4'
+
+        >
             {children}
-        </Box>
+        </div>
     </div>
   )
 }
