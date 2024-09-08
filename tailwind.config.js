@@ -8,8 +8,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'bg-dark': 'rgba(17, 25, 40, 0.75)',
+        'thbg': '#2d3748', // Gray 800
+      },
+      fontSize: {
+        'sm': '0.875rem',
+        'base': '1rem',
+        'lg': '1.125rem',
+        'xl': '1.25rem',
+      },
+      borderRadius: {
+        'xl': '12px',
+      },
+      boxShadow: {
+        'lg': '0 10px 15px rgba(0, 0, 0, 0.2)',
       },
     },
   },
